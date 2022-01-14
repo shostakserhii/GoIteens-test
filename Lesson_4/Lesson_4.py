@@ -83,10 +83,12 @@
 
 welcome = "helloooo wooooorld"
 index = 0
-print(f"LEN of {welcome} is {len(welcome)}")
+print(len(welcome))
 
 while index != len(welcome):
     if welcome[index] == "o":
+        index += 1
         continue
+    index +=1 
     print(welcome[index])
-    index += 1
+
