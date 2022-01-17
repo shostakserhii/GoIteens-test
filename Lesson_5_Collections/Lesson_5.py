@@ -62,7 +62,7 @@ list_collection = ['123', 4235, True, None, "dawdaefrf"]
 new_collection = list_collection + [1, 3, 4]
 print(new_collection)
 
-list_collection.extend(["a" ,"a" ,"a" ,"a" ,"a" ,"a" ,"a" ,"a" ,"a"])
+list_collection.extend(["a", "a", "a", "a", "a", "a", "a", "a", "a"])
 print(list_collection)
 
 index = 0
@@ -87,3 +87,6 @@ immutable_collection = ([1, 2, 3], 4235, True, None, "asasasas")
 immutable_collection[0].append("hello")
 print(immutable_collection)
 
+string = "hello"
+string_methods = dir(string)
+print(string_methods)
