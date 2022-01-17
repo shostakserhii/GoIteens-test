@@ -89,6 +89,6 @@ while index != len(welcome):
     if welcome[index] == "o":
         index += 1
         continue
-    index +=1 
+    index += 1
     print(welcome[index])
 
