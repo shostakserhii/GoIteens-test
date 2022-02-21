@@ -1,0 +1,15 @@
+set1 & set2
+
+1 Contact Book через Class
+    tel_number          #380984567831 - 12-digits
+    first_name          #Serhii
+    last_name           #Shostak
+    city/village        #Rivne
+    email first_last.city@city.com Shostak_Serhii.Rivne@Rivne.com
+
+    - Додавати контакт користувача
+    - Видаляти контакт користувача
+    - Видозмінювати дані користувача
+    - Пошук користувачів по city/village
+    - Пошук користувача по емейлу
+    - Виводити кількість користувачів
