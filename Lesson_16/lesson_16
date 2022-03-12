@@ -1,0 +1,41 @@
+#https://pypi.org/project/python-telegram-bot/     -installation
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from pprint import pprint
+
+#Updater - об'єкт, який вміє з'явуватись з сервером телеграма, передавати/отримувати інформацію
+
+TOKEN = '5202988246:AAEV35LRTp4GggwEaxk6X4hgdWSrH7MnJXk'
+updater = Updater(TOKEN, use_context=True)
+
+dispatcher = updater.dispatcher
+print('Bot started. Press Ctrl+Z to exit')
+
+def start(update, context):
+    chat = update.effective_chat
+    context.bot.send_message(chat_id=chat.id, text="Hello! Welcome to currency Bot!")
+
+
+def any_message(update, context):
+    chat = update.effective_chat
+    text = update.message.text  # '3+4'
+    # context.bot.send_message(chat_id=chat.id, text=text)
+    if text.isdigit():
+        number = float(text)
+        uah_in_usd = 33
+        result = number * uah_in_usd
+        text = '$%.2f = ₴%.2f' % (number, result)
+    else:
+        text = 'Sorry, that doesn\'t look like number'
+    context.bot.send_message(chat_id=chat.id, text=text)
+
+dispatcher.add_handler(CommandHandler('start', start))   #/start
+dispatcher.add_handler(MessageHandler(Filters.all, any_message))
+
+updater.start_polling()
+updater.idle()
+
+
+
+def hello(text):
+    pass    #pass - це заглушка, означає 'ніого не робити'
+
