@@ -1,0 +1,9 @@
+1 створити клас людина і 4 похідних похідних класи з унікальними методами, атрибутами
+
+Human - Adult
+Adult - Student
+Human - Child
+Adult - Worker - Teacher
+Teacher працює з студентами
+
+2 Переглянути magic methods, реалузувати для своїх класів
