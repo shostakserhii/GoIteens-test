@@ -4,6 +4,9 @@ ELIF
 ELSE
 True == 1, bool(1), not empty value
 False == 0, bool(0), empty value
+
+AND
+OR
 """
 
 # x = input("Enter number: ")
