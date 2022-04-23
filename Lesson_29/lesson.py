@@ -15,21 +15,17 @@ def own_range(start=0, end=None, step=1):
     if end > start and step < 0:
         return None
 
-    # if end > start:
-    #     while start < end:
-    #         yield start
-    #         start += step
-    #
-    # elif end < start:
-    #     while start > end:
-    #         yield start
-    #         start += step
+    if end > start:
+        while start < end:
+            yield start
+            start += step
 
-    while start != end:
-        yield start
-        if start + (end % step) == end:
-            return
-        start += step
+    elif end < start:
+        while start > end:
+            yield start
+            start += step
+
+
 
 
 x = own_range(0, -11, -2)
