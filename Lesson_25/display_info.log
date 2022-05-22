@@ -1,0 +1,7 @@
+INFO:root:Ran with args: ('User', '22') and kwargs: {}
+INFO:root:Ran with args: ('User2', '23') and kwargs: {}
+INFO:root:Ran with args: ('User2', '23') and kwargs: {}
+INFO:root:Function: display_info. Ran with args: ('User2', '23') and kwargs: {}
+INFO:root:Function: display_info. Ran with args: ('User2', '23') and kwargs: {}
+INFO:root:Function: display_info. Ran with args: ('User2', '23') and kwargs: {}
+INFO:root:Function: display_info. Ran with args: ('User2', '23') and kwargs: {}

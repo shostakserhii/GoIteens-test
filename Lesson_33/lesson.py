@@ -1,10 +1,15 @@
 import sys
 from pprint import pprint
-from lesson_2 import lesson_2
+# from lesson_2 import lesson_2
 pprint(sys.path)
 print(type(sys.path))
-lesson_2()
-import test_2022
+# lesson_2()
+from Test_2022.test_2022 import power_3
 import os
-print(os.getcwd())
-print(test_2022.power_3(3))
+import Test_2022
+# print(os.getcwd())
+print(power_3(3))
+
+#для Стьопи
+#export PYTHONPATH='<path>'
+#printenv

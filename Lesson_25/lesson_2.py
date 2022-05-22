@@ -17,6 +17,7 @@
 ####################################################################################
 from functools import wraps
 
+
 def my_logger(original_func):
     import logging
     logging.basicConfig(filename=f'{original_func.__name__}.log', level=logging.INFO)
