@@ -1,0 +1,2 @@
+1 cover calculators with tests using unittest module (or pytest)
+2 cover Currency Bot function that goes to API with unittest module (or pytest)
